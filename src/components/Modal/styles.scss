@@ -1,0 +1,17 @@
+.modal-wrapper{
+  background: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vw;
+  opacity: 50%;
+  .modal-content{
+    position: absolute;
+    left: 45%;
+    top: 40%;
+    max-width: 640px;
+    border-radius: 2px;
+    background: white;
+  }
+}
