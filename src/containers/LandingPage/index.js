@@ -9,7 +9,7 @@ function LandingPage() {
   return (
     <div className="grid-container">
       {feedsource.map((item, id) => (
-        <div className="grid-item">
+        <div key={id} className="grid-item">
           <Card key={id} data={item}  />
           </div>
       ))}
