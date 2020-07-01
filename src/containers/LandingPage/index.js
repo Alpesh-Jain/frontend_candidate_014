@@ -7,9 +7,11 @@ import './styles.scss';
 function LandingPage() {
 
   return (
-    <div className="landing-page">
+    <div className="grid-container">
       {feedsource.map((item, id) => (
-          <Card key={}  />
+        <div className="grid-item">
+          <Card key={id} data={item}  />
+          </div>
       ))}
     </div>
   );
