@@ -21,7 +21,7 @@ function Modal(props) {
     <button style={{backgroundColor:'#86BC25',border:0,padding:'0.5em',color:'white',fontWeight:600}} onClick={() => setModalShow(true)}>
     Select
     </button>
-    {modalShow && <JSX_MODAL content={props.Modaltext}  />}
+    {modalShow && <JSX_MODAL content={props.Modaltext} handleClose={()=>setModalShow(false)} />}
 </>
   );
 }
